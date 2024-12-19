@@ -45,7 +45,7 @@ const bankAccount = {
   }
 };
 
-// düymə kliklədikdə müəyyən sahələrdən məlumatları toplayıb, çağırılan funksiyaya ötürməkdir.
+// düyme klikledikde müeyyen sahelerden melumatları toplayıb, çagırılan funksiyaya ötürmekdir.
 function handleFormSubmit(buttonSelector, inputSelectors, callback) {
   document.querySelector(buttonSelector).addEventListener("click", () => {
     const inputs = inputSelectors.map(selector => document.querySelector(selector).value.trim());
@@ -83,7 +83,7 @@ handleFormSubmit("#login-btn", ["#login-username", "#login-pin"], (username, pin
   }
 });
 
-// Deposit and Withdraw Events
+// Deposit ve Withdraw Events
 ["#deposit-btn", "#withdraw-btn"].forEach(selector => {
   document.querySelector(selector).addEventListener("click", () => {
     const amount = parseFloat(document.querySelector("#amount").value);

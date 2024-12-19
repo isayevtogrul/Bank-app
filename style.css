@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +18,6 @@ body {
   text-align: center; 
 }
 
-
-/* Center Container */
 .container {
   max-width: 400px;
   margin: 50px auto;
@@ -29,8 +27,6 @@ body {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
-
-/* Başlıqlar */
 h1, h2, h3 {
   font-size: 18px;
   margin-bottom: 10px;
@@ -46,7 +42,6 @@ h1 {
   color: #19261a;
 }
 
-/* Input Sahələri */
 input[type="text"], input[type="password"], input[type="number"] {
   width: 100%;
   padding: 10px;
@@ -63,7 +58,6 @@ input[type="number"]:focus {
   border-color: #4CAF50;
 }
 
-/* Butonlar */
 button {
   width: 100%;
   padding: 10px;
@@ -81,8 +75,6 @@ button:hover{
 }
 
 
-
-/* Uğur və Xəta Mesajları */
 #signup-msg {
   font-size: 14px;
   text-align: center;
@@ -94,7 +86,7 @@ button:hover{
   color: rgb(141, 7, 7);
 }
 
-/* Balans Sahəsi */
+
 .balance-section {
   background: #f1f1f1;
   padding: 15px;
