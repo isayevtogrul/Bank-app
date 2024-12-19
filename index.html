@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Account App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sign-up Section -->
+  <div id="signup-section" class="container">
+    <h1>Sign Up for Your Bank Account</h1>
+    <input type="text" id="signup-username" placeholder="Create Username">
+    <input type="password" id="signup-pin" maxlength="4" placeholder="Create 4-digit PIN">
+    <button id="signup-btn">Create Account</button>
+    <p id="signup-msg"></p>
+  </div>
+
+  <!-- Login Section -->
+  <div id="login-section" class="container" style="display: none;">
+    <h1>Bank Account Login</h1>
+    <input type="text" id="login-username" placeholder="Enter Username">
+    <input type="password" id="login-pin" maxlength="4" placeholder="Enter PIN">
+    <button id="login-btn">Login</button>
+    <p id="error-msg"></p>
+  </div>
+
+  <!-- Bank Account Section -->
+  <div id="app-section" class="container" style="display: none;">
+    <h1>TT Bank</h1>
+    <h2>Welcome, <span id="user-display"></span>!</h2>
+    <div class="balance-section">
+      <h2>Current Balance: $<span id="balance">0</span></h2>
+    </div>
+
+    <div class="transaction-section">
+      <h3>Make a Transaction</h3>
+      <input type="number" id="amount" placeholder="Enter amount">
+      <div class="buttons">
+        <button id="deposit-btn">Deposit</button>
+        <button id="withdraw-btn">Withdraw</button>
+      </div>
+    </div>
+
+    <div class="history-section">
+      <h3>Transaction History</h3>
+      <ul id="transaction-history"></ul>
+    </div>
+  </div>
+  <footer>
+    <p>© 2024 TT Bank Account App. All rights reserved.</p>
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

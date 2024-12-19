@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+body {
+  margin: 0;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  background: linear-gradient(to bottom, #090a4c, #b03e35fc);
+  color: #000; 
+  font-family: Arial, sans-serif; 
+  text-align: center; 
+}
+
+
+/* Center Container */
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: rgba(16, 104, 34, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Başlıqlar */
+h1, h2, h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #19261a;
+}
+
+/* Input Sahələri */
+input[type="text"], input[type="password"], input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #f5f3f3;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="number"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* Butonlar */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+button:hover{
+  transform: scale(1.03);
+  background: #45A049;
+}
+
+
+
+/* Uğur və Xəta Mesajları */
+#signup-msg {
+  font-size: 14px;
+  text-align: center;
+}
+
+#error-msg {
+  font-size: 14px;
+  text-align: center;
+  color: rgb(141, 7, 7);
+}
+
+/* Balans Sahəsi */
+.balance-section {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.balance-section h2 {
+  color: #4CAF50;
+}
+
+/* Txransaksiya Sahəsi */
+.transaction-section {
+  margin: 20px 0;
+}
+
+.transaction-section h3 {
+  color: #333;
+}
+
+.transaction-section input {
+  margin-bottom: 15px;
+}
+
+.transaction-section .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transaction-section button {
+  width: 48%;
+}
+
+/* Txransaksiya Tarixi */
+.history-section ul {
+  list-style: none;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.history-section ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.history-section ul li:last-child {
+  border-bottom: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: hsl(0, 17%, 95%);
+  font-size: 16px;
+  background: #0d3e11;
+  padding: 15px;
+}
+footer:hover{
+ transform-style: flat;
+}
+
